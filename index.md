@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Resume
+lang: en
 ---
 
 <div class="photo-placeholder">

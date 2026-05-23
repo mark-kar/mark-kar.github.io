@@ -4,6 +4,7 @@ title: "Understanding Async/Await in JavaScript"
 date: 2024-02-01
 categories: [javascript, tutorial]
 tags: [javascript, async, promises]
+lang: en
 ---
 
 Asynchronous programming is a fundamental concept in modern JavaScript. In this post, we'll explore async/await syntax and how it simplifies working with promises.

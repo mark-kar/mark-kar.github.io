@@ -1,17 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.default_lang | default: 'en' }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <style>
+        .lang-switcher {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .lang-switcher a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .lang-switcher a.active {
+            color: #007bff;
+        }
+        .lang-switcher a:hover {
+            text-decoration: underline;
+        }
+        nav {
+            position: relative;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="{{ '/' | relative_url }}">Home</a>
-            <a href="{{ '/blog/' | relative_url }}">Blog</a>
+            <a href="{% if page.lang == 'ru' %}{{ '/ru/' | prepend: site.baseurl }}{% else %}{{ '/' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Главная{% else %}Home{% endif %}</a>
+            <a href="{% if page.lang == 'ru' %}{{ '/blog/' | prepend: '/ru' | prepend: site.baseurl }}{% else %}{{ '/blog/' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Блог{% else %}Blog{% endif %}</a>
+            <div class="lang-switcher">
+                {% assign target_url = page.url %}
+                {% if page.lang == 'ru' %}
+                    {% assign target_url = page.url | remove: '/ru' | replace: '//', '/' %}
+                    {% if target_url == '/' or target_url == '' %}{% assign target_url = '/' %}{% endif %}
+                    <a href="{{ target_url | prepend: site.baseurl }}" class="">EN</a>
+                    <a href="#" class="active">RU</a>
+                {% else %}
+                    {% assign target_url = '/ru' | append: page.url | replace: '//', '/' %}
+                    {% if page.url == '/' %}{% assign target_url = '/ru/' %}{% endif %}
+                    <a href="#" class="active">EN</a>
+                    <a href="{{ target_url | prepend: site.baseurl }}" class="">RU</a>
+                {% endif %}
+            </div>
         </nav>
     </header>
 

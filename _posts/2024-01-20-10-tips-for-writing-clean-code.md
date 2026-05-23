@@ -4,6 +4,7 @@ title: "10 Tips for Writing Clean Code"
 date: 2024-01-20
 categories: [programming, best-practices]
 tags: [clean-code, programming, software-engineering]
+lang: en
 ---
 
 Writing clean code is essential for maintainability, readability, and collaboration. Here are ten tips that have helped me write better code throughout my career.
