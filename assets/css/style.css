@@ -85,6 +85,22 @@ footer {
     margin-bottom: 20px;
 }
 
+/* Photo Placeholder Styles */
+.photo-placeholder {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.photo-placeholder img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
 .resume .section {
     margin-bottom: 30px;
 }

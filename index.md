@@ -3,6 +3,10 @@ layout: home
 title: Resume
 ---
 
+<div class="photo-placeholder">
+    <img src="https://picsum.photos/seed/profile/200/200" alt="Profile Photo Placeholder">
+</div>
+
 # John Doe
 
 <div class="contact-info">
