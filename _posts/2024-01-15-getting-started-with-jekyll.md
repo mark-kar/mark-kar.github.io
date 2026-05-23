@@ -4,6 +4,7 @@ title: "Getting Started with Jekyll and GitHub Pages"
 date: 2024-01-15
 categories: [tutorial, jekyll]
 tags: [jekyll, github-pages, static-site]
+lang: en
 ---
 
 Welcome to my first blog post! In this article, I'll walk you through the basics of setting up a personal website using Jekyll and GitHub Pages.

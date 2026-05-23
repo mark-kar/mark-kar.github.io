@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Резюме
+permalink: /ru/
 lang: ru
 ---
 

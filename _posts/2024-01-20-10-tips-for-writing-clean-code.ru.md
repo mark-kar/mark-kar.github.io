@@ -5,6 +5,7 @@ date: 2024-01-20
 categories: [programming, best-practices]
 tags: [clean-code, programming, software-engineering]
 lang: ru
+permalink: /ru/blog/2024/01/20/10-tips-for-writing-clean-code/
 ---
 
 Написание чистого кода необходимо для поддерживаемости, читаемости и совместной работы. Вот десять советов, которые помогли мне писать лучший код на протяжении всей моей карьеры.

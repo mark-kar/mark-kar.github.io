@@ -5,6 +5,7 @@ date: 2024-02-01
 categories: [javascript, tutorial]
 tags: [javascript, async, promises]
 lang: ru
+permalink: /ru/blog/2024/02/01/understanding-async-await/
 ---
 
 Асинхронное программирование является фундаментальной концепцией современного JavaScript. В этом посте мы исследуем синтаксис async/await и то, как он упрощает работу с промисами.

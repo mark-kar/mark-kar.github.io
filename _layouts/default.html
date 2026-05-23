@@ -33,21 +33,14 @@
     <header>
         <nav>
             <a href="{{ '/' | relative_url }}">{% if page.lang == 'ru' %}Главная{% else %}Home{% endif %}</a>
-            <a href="{{ '/blog/' | relative_url }}">{% if page.lang == 'ru' %}Блог{% else %}Blog{% endif %}</a>
+            <a href="{% if page.lang == 'ru' %}{{ '/blog/' | prepend: '/ru' | prepend: site.baseurl }}{% else %}{{ '/blog/' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Блог{% else %}Blog{% endif %}</a>
             <div class="lang-switcher">
-                {% assign base_url = page.url | remove: '.html' %}
                 {% if page.lang == 'ru' %}
-                    <a href="{{ base_url | remove: '/ru' | replace: '//', '/' | prepend: site.baseurl }}" class="">EN</a>
+                    <a href="{{ page.url | remove: '/ru' | replace: '//', '/' | prepend: site.baseurl }}" class="">EN</a>
                     <a href="#" class="active">RU</a>
                 {% else %}
                     <a href="#" class="active">EN</a>
-                    {% if base_url == '/' or base_url == '' %}
-                        <a href="{{ '/ru/' | prepend: site.baseurl }}" class="">RU</a>
-                    {% elsif base_url contains '/blog' %}
-                        <a href="{{ '/ru/blog/' | prepend: site.baseurl }}" class="">RU</a>
-                    {% else %}
-                        <a href="{{ '/ru' | append: base_url | prepend: site.baseurl }}" class="">RU</a>
-                    {% endif %}
+                    <a href="{{ '/ru' | append: page.url | replace: '//', '/' | prepend: site.baseurl }}" class="">RU</a>
                 {% endif %}
             </div>
         </nav>

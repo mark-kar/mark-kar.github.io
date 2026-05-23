@@ -5,6 +5,7 @@ date: 2024-01-15
 categories: [tutorial, jekyll]
 tags: [jekyll, github-pages, static-site]
 lang: ru
+permalink: /ru/blog/2024/01/15/getting-started-with-jekyll/
 ---
 
 Добро пожаловать в мой первый пост в блоге! В этой статье я расскажу вам об основах настройки персонального веб-сайта с использованием Jekyll и GitHub Pages.

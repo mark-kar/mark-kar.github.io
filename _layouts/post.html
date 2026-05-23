@@ -14,4 +14,4 @@ title: {{ page.title }}
     </div>
 </article>
 
-<a href="{{ '/blog' | relative_url }}" class="back-to-blog">← Back to Blog</a>
+<a href="{% if page.lang == 'ru' %}{{ '/blog/' | prepend: '/ru' | prepend: site.baseurl }}{% else %}{{ '/blog/' | relative_url }}{% endif %}" class="back-to-blog">{% if page.lang == 'ru' %}← Назад к блогу{% else %}← Back to Blog{% endif %}</a>
