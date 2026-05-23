@@ -1,0 +1,29 @@
+title: Personal Resume and Blog
+description: A personal resume and blog site powered by GitHub Pages
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Include _posts directory for blog posts
+include:
+  - _posts
+
+# Collections configuration
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Default values for documents
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+
+permalink: pretty
