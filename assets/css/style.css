@@ -21,14 +21,20 @@ header {
     border-radius: 5px;
 }
 
-nav a {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
     color: white;
     text-decoration: none;
     margin-right: 20px;
     font-weight: bold;
 }
 
-nav a:hover {
+.nav-links a:hover {
     text-decoration: underline;
 }
 
@@ -361,8 +367,18 @@ footer {
         padding: 1rem;
     }
 
-    nav a {
-        display: block;
-        margin-bottom: 10px;
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        margin-right: 0;
     }
 }

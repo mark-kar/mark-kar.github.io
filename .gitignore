@@ -1,23 +1,28 @@
-```yml
-# Configuration files
-_config.yml
-_config.local.yml
-
-# Jekyll build outputs
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+```
+# Build artifacts
+build/
+dist/
 
 # Dependencies
-Gemfile.lock
-vendor/
+node_modules/
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
 
 # Logs
 *.log
 
-# Environment variables
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Environment files
 .env
 .env.local
-.env.*
+*.env.*
 ```
