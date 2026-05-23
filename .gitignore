@@ -1,1 +1,34 @@
-Nothing should be ignored in this case, as the changes only include source files (.css) and documentation/markup files (.md), which should be tracked in version control. There are no build artifacts, dependencies, or temporary files to ignore.
+```
+# Dependencies
+vendor/bundle/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-metadata
+.jekyll-cache/
+
+# Bundler
+.bundle/
+Gemfile.lock
+```

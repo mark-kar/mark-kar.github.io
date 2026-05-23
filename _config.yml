@@ -1,6 +1,12 @@
 title: Personal Resume and Blog
 description: A personal resume and blog site powered by GitHub Pages
 
+# Polyglot localization settings
+languages: ["en", "ru"]
+default_lang: "en"
+exclude_from_localization: ["assets", "README.md"]
+parallel_localization: true
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
