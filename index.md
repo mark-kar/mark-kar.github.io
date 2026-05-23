@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Resume
+lang: en
 ---
 
 <div class="photo-placeholder">
@@ -10,17 +11,17 @@ title: Resume
 # John Doe
 
 <div class="contact-info">
-    <p><strong>Email:</strong> john.doe@example.com | <strong>Phone:</strong> (123) 456-7890 | <strong>Location:</strong> San Francisco, CA</p>
+    <p><strong data-i18n="resume.email">Email:</strong> john.doe@example.com | <strong data-i18n="resume.phone">Phone:</strong> (123) 456-7890 | <strong data-i18n="resume.location">Location:</strong> San Francisco, CA</p>
     <p><strong>LinkedIn:</strong> linkedin.com/in/johndoe | <strong>GitHub:</strong> github.com/johndoe</p>
 </div>
 
-## Professional Summary
+## <span data-i18n="resume.professional_summary">Professional Summary</span>
 
 Results-driven software engineer with 5+ years of experience in full-stack development. Proven track record of delivering high-quality solutions and leading cross-functional teams. Passionate about clean code, scalable architecture, and continuous learning.
 
 ---
 
-## Work Experience
+## <span data-i18n="resume.work_experience">Work Experience</span>
 
 ### Senior Software Engineer
 **Tech Company Inc.** | *San Francisco, CA* | *2020 - Present*
@@ -47,7 +48,7 @@ Results-driven software engineer with 5+ years of experience in full-stack devel
 
 ---
 
-## Education
+## <span data-i18n="resume.education">Education</span>
 
 ### Bachelor of Science in Computer Science
 **University of California, Berkeley** | *2013 - 2017*
@@ -57,26 +58,26 @@ Results-driven software engineer with 5+ years of experience in full-stack devel
 
 ---
 
-## Skills
+## <span data-i18n="resume.skills">Skills</span>
 
-### Programming Languages
+### <span data-i18n="resume.programming_languages">Programming Languages</span>
 - JavaScript, TypeScript, Python, Java, Go
 
-### Frontend Technologies
+### <span data-i18n="resume.frontend_technologies">Frontend Technologies</span>
 - React, Vue.js, HTML5, CSS3, Sass, Tailwind CSS
 
-### Backend Technologies
+### <span data-i18n="resume.backend_technologies">Backend Technologies</span>
 - Node.js, Express, Django, Spring Boot, GraphQL
 
-### Databases
+### <span data-i18n="resume.databases">Databases</span>
 - PostgreSQL, MongoDB, Redis, MySQL
 
-### DevOps & Tools
+### <span data-i18n="resume.devops_tools">DevOps & Tools</span>
 - Docker, Kubernetes, AWS, Git, Jenkins, GitHub Actions
 
 ---
 
-## Projects
+## <span data-i18n="resume.projects">Projects</span>
 
 ### E-Commerce Platform
 - Built a full-stack e-commerce application with payment integration
@@ -88,7 +89,7 @@ Results-driven software engineer with 5+ years of experience in full-stack devel
 
 ---
 
-## Certifications
+## <span data-i18n="resume.certifications">Certifications</span>
 
 - AWS Certified Solutions Architect - Associate (2022)
 - Google Cloud Professional Developer (2021)
@@ -96,7 +97,7 @@ Results-driven software engineer with 5+ years of experience in full-stack devel
 
 ---
 
-## Languages
+## <span data-i18n="resume.languages">Languages</span>
 
 - English (Native)
 - Spanish (Intermediate)
